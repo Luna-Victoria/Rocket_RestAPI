@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 
-namespace Rocket.Models {
-    public partial class Buildings {
-        public Buildings () {
-            Batteries = new HashSet<Batteries> ();
-            BuildingDetails = new HashSet<BuildingDetails> ();
+namespace Rocket.Models
+{
+    public partial class Buildings
+    {
+        public Buildings()
+        {
+            Batteries = new HashSet<Batteries>();
+            BuildingDetails = new HashSet<BuildingDetails>();
+            Interventions = new HashSet<Interventions>();
         }
 
         public long Id { get; set; }
@@ -24,8 +27,8 @@ namespace Rocket.Models {
 
         public Addresses Address { get; set; }
         public Customers Customer { get; set; }
-        [JsonIgnore]
         public ICollection<Batteries> Batteries { get; set; }
         public ICollection<BuildingDetails> BuildingDetails { get; set; }
+        public ICollection<Interventions> Interventions { get; set; }
     }
 }

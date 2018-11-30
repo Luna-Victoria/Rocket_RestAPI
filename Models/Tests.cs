@@ -3,10 +3,9 @@ using System.Collections.Generic;
 
 namespace Rocket.Models
 {
-    public partial class ArInternalMetadata
+    public partial class Tests
     {
-        public string Key { get; set; }
-        public string Value { get; set; }
+        public long Id { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
     }
