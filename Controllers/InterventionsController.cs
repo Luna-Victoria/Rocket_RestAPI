@@ -53,7 +53,7 @@ namespace Rocket.Controllers {
             return list_pending;
         }
 
-        // PUT api/interventions/5
+        // PUT api/interventions/inprogress/5
         [HttpPut ("inprogress/{id}")]
         public string UpdateInProgress (long id) {
             var inters = _context.Interventions.Find(id);
@@ -76,7 +76,7 @@ namespace Rocket.Controllers {
         }
 
         
-        // PUT api/interventions/5
+        // PUT api/interventions/completed/5
         [HttpPut ("completed/{id}")]
         public string UpdateCompleted (long id) {
             var interc = _context.Interventions.Find(id);
