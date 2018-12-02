@@ -29,6 +29,9 @@ namespace Rocket.Controllers {
             }
             var json = new JObject ();
             json["status"] = item.Status;
+            json["Starting Date"] = item.StartingDate;
+            json["Ending Date"] = item.EndingDate;
+
             return Content (json.ToString (), "application/json");
         }
 
