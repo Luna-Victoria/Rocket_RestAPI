@@ -2,18 +2,28 @@
 
 ### What's new with Rocket Elevators Rest API?
 
-Version 1.2 is up
+#### Version 1.2 is up
 
 To fit the newest section Intervention on the web site, the API has to update too!
 
-*How to answer the 9 questions in Postman :*
+#### *How to answer the questions in Postman :*
 
-### - *Get all interventions that have the "Pending" status and doesn't have a starting and/or ending date:*
+#### - *Get all interventions that have the "Pending" status and doesn't have a starting and/or ending date:*
 &nbsp;&nbsp;&nbsp;&nbsp;**GET** https://rocketelevator.azurewebsites.net/api/interventions
 
+#### - *Get one intervention by it's ID to see it's status, starting date and ending date:*
+&nbsp;&nbsp;&nbsp;&nbsp;**GET** https://rocketelevator.azurewebsites.net/api/interventions/5    _[5 = specified intervention ID]_
+
+#### - *To change the status "Pending" to "In Progress" and add a starting date time:*
+&nbsp;&nbsp;&nbsp;&nbsp;**PUT** https://rocketelevator.azurewebsites.net/api/interventions/inprogress/5    _[5 = specified intervention ID]_
+
+#### - *To change the status "In Progress" to "Completed" and add a ending date time:*
+&nbsp;&nbsp;&nbsp;&nbsp;**PUT** https://rocketelevator.azurewebsites.net/api/interventions/completed/5    _[5 = specified intervention ID]_
 
 
-### *Version 1.1 :* 
+### *Older version:*
+
+#### *Version 1.1 :* 
 
 #### 1- *To Get a specified Battery current status, do* : </br>
 &nbsp;&nbsp;&nbsp;&nbsp;**GET** https://rocketelevator.azurewebsites.net/api/batteries/5		_[5 = specified battery ID]_ </br>
