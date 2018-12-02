@@ -1,7 +1,6 @@
-# Rocket  // Odyssey Week 7
+# Rocket_RestAPI  // Odyssey Consolidation
 
-### Rocket Elevators New REST API
-
+### What's new with Rocket Elevators Rest API?
 
 
 ### **How to answer the 9 questions in Postman :** 
